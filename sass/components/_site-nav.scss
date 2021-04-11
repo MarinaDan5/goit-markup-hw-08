@@ -1,0 +1,47 @@
+.menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    margin-right: 84px;
+  }
+  .nav-information {
+    display: flex;
+    align-items: center;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+/*.nav-information {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.menu__link {
+  color: var(--title-text-color);
+  transition: color 250ms var(--timing-function);
+  padding-bottom: 32px;
+  .menu &:hover,
+  .menu &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.menu .link.current {
+  color: var(--accent-color);
+}
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}*/
