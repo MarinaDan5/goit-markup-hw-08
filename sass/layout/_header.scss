@@ -84,6 +84,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
   .contact-list__link {
     font-size: 14px;
     line-height: 1.14;

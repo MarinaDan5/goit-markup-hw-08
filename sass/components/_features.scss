@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 .visually-list {
+  display: flex;
   background: #f5f4fa;
   border-radius: 4px;
   align-items: center;
@@ -46,6 +47,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
   .features__item {
     width: calc((1200px - 8 * 15px) / 4);
   }

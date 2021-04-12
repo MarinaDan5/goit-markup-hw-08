@@ -8,6 +8,10 @@
 .logo__accent-text {
   color: var(--accent-color);
 }
+.logo__dark-theme {
+  color: var(--secondary-text-color);
+}
+
 @media screen and(min-width: 768px) {
   .logo {
     margin-right: 88px;
