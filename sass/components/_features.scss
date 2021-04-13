@@ -1,5 +1,5 @@
 .features-section {
-  padding-top: 60px;
+  padding-top: var(--section-mobile-pad-top);
   margin: 0 auto;
 }
 .visually-list {
@@ -48,7 +48,7 @@
 }
 @media screen and (min-width: 1200px) {
   .features-section {
-    padding-top: 94px;
+    padding-top: var(--section-desktop-pad-top);
     padding-bottom: 47px;
   }
   .features__item {
