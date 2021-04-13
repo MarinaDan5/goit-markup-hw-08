@@ -64,7 +64,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   outline: none;
   border-radius: 4px;
-  min-width: 450px;
+  min-height: 100%;
   color: var(--secondary-text-color);
   padding: 16px 15px;
   margin-bottom: 20px;
@@ -91,6 +91,15 @@
 @media screen and (min-width: 480px) {
   .address-main {
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .adress-social {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-form-all {
+    display: block;
   }
 }
 /*.footer {
