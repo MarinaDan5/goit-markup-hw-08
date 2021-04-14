@@ -1,6 +1,7 @@
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border: 1px solid #ececec;
 }
 .contact-list {
   display: none;
@@ -9,6 +10,10 @@
   display: none;
 }
 @media screen and(min-width: 768px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .burger-btn {
     display: none;
   }
@@ -27,6 +32,7 @@
     margin-right: 50px;
   }
   .menu__link {
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -38,17 +44,17 @@
   }
   .current {
     position: relative;
-    padding-bottom: 39px;
+    padding-bottom: 37px;
 
     &::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 4px;
-      background-color: var(--accent-color);
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: -1px;
+      content: "";
+      display: block;
+      height: 4px;
+      width: 100%;
+      background-color: #2196f3;
       border-radius: 2px;
 
       transition: opacity 250ms var(--timing-function);
@@ -85,8 +91,8 @@
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .contact-list__link {
     font-size: 14px;
@@ -109,6 +115,7 @@
       fill: var(--accent-color);
     }
   }
+
   .contact-list__icon-mail {
     width: 16px;
     height: 12px;

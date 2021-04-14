@@ -21,6 +21,9 @@
     height: 44px;
     width: 44px;
   }
+  & .logo {
+    margin-right: 0;
+  }
 }
 .address-main {
   margin-top: 20px;
@@ -57,7 +60,6 @@
   margin-bottom: 20px;
   padding: 14px 0 14px 15px;
   min-width: 100%;
-
   font-size: 16px;
   line-height: 1.25;
   color: #fff;
@@ -71,15 +73,16 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-button {
-  color: var(--secondary-text-color);
+  display: inline-flex;
+  align-items: center;
   height: 50px;
-  background: var(--accent-color);
+  padding: 10px 29px;
+  margin: 0 auto;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 29px;
-  border: transparent;
-  cursor: pointer;
-  margin: 0 auto;
+  color: var(--secondary-text-color);
+  border-color: transparent;
 
   &__icon {
     margin-left: 10px;
@@ -87,21 +90,39 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .footer .container {
+  .adress-social {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  }
+  .left-parts {
+    margin-right: 165px;
+  }
+  .footer-form__input {
+    min-width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer .container {
-    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: flex-start;
+
+    justify-content: space-between;
   }
+
   .left-parts {
-    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .footer-wraper {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+  .footer-form__input {
+    margin-right: 12px;
+    margin-bottom: 0;
+    min-width: 358px;
   }
 }
-
 /*.footer {
   background-color: #2f303a;
   padding-top: 60px;
